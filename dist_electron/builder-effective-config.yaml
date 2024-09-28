@@ -1,0 +1,16 @@
+directories:
+  output: dist_electron
+  buildResources: build
+appId: dev.hannesscript.saiko-os
+files:
+  - filter:
+      - dist/**/**/**/**/*
+      - main.cjs
+      - preload.cjs
+win:
+  target: nsis
+mac:
+  target: dmg
+linux:
+  target: AppImage
+electronVersion: 31.2.1

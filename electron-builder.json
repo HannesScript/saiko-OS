@@ -1,0 +1,20 @@
+{
+    "appId": "dev.hannesscript.saiko-os",
+    "directories": {
+        "output": "dist_electron"
+    },
+    "files": [
+        "dist/**/**/**/**/*",
+        "main.cjs",
+        "preload.cjs"
+    ],
+    "win": {
+        "target": "nsis"
+    },
+    "mac": {
+        "target": "dmg"
+    },
+    "linux": {
+        "target": "AppImage"
+    }
+}

@@ -1,0 +1,58 @@
+body {
+    color: white;
+    font-family: Rubik Doodle Shadow;
+    margin: 0;
+    background-color: rgb(23, 43, 43);
+    overflow-y: hidden;
+}
+
+td {
+    width: 25%;
+    text-align: center;
+    font-size: 48px;
+    background-color: rgb(22, 42, 42,1);
+}
+
+table {
+    width: 99%;
+    height: 75vh;
+    background-color: rgb(22, 43, 43);
+}
+
+td:hover {
+    background-color: rgb(29, 56, 56);
+    cursor: pointer;
+}
+
+
+#resultarea {
+    height: 25vh;
+    background-color: rgb(24, 65, 65);
+    border-radius: 2vh;
+    margin: 0.4vh;
+    font-size: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tddel {
+    color: red;
+}
+
+#tdist {
+    background-color: rgb(119, 38, 195,0.6);
+    border-radius: 2.5vh;
+}
+
+#tdist:hover {
+    background-color: rgb(132, 1, 255);
+}
+
+.operators {
+    color: rgb(190, 190, 24);
+}
+
+#tdac {
+    color: red;
+}

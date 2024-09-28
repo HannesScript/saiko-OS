@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div id="resultarea">
+        
+    </div>
+    <table>
+        <tr>
+            <td onclick="appendoperation(1)">1</td>
+            <td onclick="appendoperation(2)">2</td>
+            <td onclick="appendoperation(3)">3</td>
+            
+            <td class="operators" onclick="appendoperation(' + ')">+</td>
+            <td id="tddel" onclick="deleteLast()">DEL</td>
+            
+
+        </tr>
+
+        <tr>
+            <td onclick="appendoperation(4)">4</td>
+            <td onclick="appendoperation(5)">5</td>
+            <td onclick="appendoperation(6)">6</td>
+            
+            <td class="operators" onclick="appendoperation(' - ')">-</td>
+            <td id="tdac" onclick="ac()">AC</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendoperation(7)">7</td>
+            <td onclick="appendoperation(8)">8</td>
+            <td onclick="appendoperation(9)">9</td>
+        
+            <td class="operators" onclick="appendoperation(' * ')">x</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendoperation(0)">0</td>
+            <td onclick="appendoperation('.')">.</td>
+            <td id="tdist" onclick="result()">=</td>
+            <td class="operators" onclick="appendoperation(' / ')">/</td>
+        </tr>
+    </table>
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <!-- Melte -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/melte@latest/src/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/melte@latest/src/css/utility.css">
+
+
+    <script>
+        let settings;
+        fetch("http://localhost:8080/settings/get").then(data => {
+            // log the data from the server
+            data.json().then(jsonData => {
+                console.log(jsonData);
+                settings = jsonData;
+            }).catch(error => {
+                console.error('Error parsing JSON:', error);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Settings</h1>
+    <script>
+        // display all the settings
+        for (const setting in settings) {
+            document.write(`<div class="card">
+                <h2>${setting.name}</h2>
+                <p>${setting.value}</p>
+            </div>`);
+        }
+    </script>
+</body>
+</html>

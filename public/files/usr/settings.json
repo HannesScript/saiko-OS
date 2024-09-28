@@ -1,0 +1,10 @@
+{
+    "bgImg": "default-background.jpg",
+    "primarySwatch": "#1d1d1d",
+    "animationSpeed": 5,
+    "secondarySwatch": "#ffffff",
+    "primaryLight": "#353535",
+    "pw": "admin",
+    "username": "User",
+    "userimage": null
+}

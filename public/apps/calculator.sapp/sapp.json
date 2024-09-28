@@ -1,0 +1,7 @@
+{
+    "name": "Calculator",
+    "icon": "logo.png",
+    "app": "index.html",
+    "width": 550,
+    "height": 800
+}
